@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4F5088C9-5FED-4E69-9336-D49387268077}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TpGrupal</RootNamespace>
+    <AssemblyName>TpGrupal</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BasesInterm\Helicoptero.cs" />
+    <Compile Include="BasesInterm\Zeppelin.cs" />
+    <Compile Include="BasesInterm\Avion.cs" />
+    <Compile Include="BasesInterm\Bici.cs" />
+    <Compile Include="BasesInterm\Camion.cs" />
+    <Compile Include="BasesInterm\Moto.cs" />
+    <Compile Include="BasesInterm\Auto.cs" />
+    <Compile Include="Bases\Terrestre.cs" />
+    <Compile Include="Bases\VehiculoAereo.cs" />
+    <Compile Include="Derivadas\AutoUrbano.cs" />
+    <Compile Include="Derivadas\MotoSideCar.cs" />
+    <Compile Include="Derivadas\MotoCarrerra.cs" />
+    <Compile Include="Derivadas\Triciclo.cs" />
+    <Compile Include="Derivadas\BicicletaMtb.cs" />
+    <Compile Include="Derivadas\BicicletaCarrera.cs" />
+    <Compile Include="Derivadas\Frigorifico.cs" />
+    <Compile Include="Derivadas\CamionCarga.cs" />
+    <Compile Include="Derivadas\Flete.cs" />
+    <Compile Include="Derivadas\AutoFormula.cs" />
+    <Compile Include="Derivadas\AutoElectrico.cs" />
+    <Compile Include="Derivadas\HelicopteroGrua.cs" />
+    <Compile Include="Derivadas\HelicopteroMilitar.cs" />
+    <Compile Include="Derivadas\Avioneta.cs" />
+    <Compile Include="Derivadas\AvionComercial.cs" />
+    <Compile Include="Derivadas\HidroAvion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
